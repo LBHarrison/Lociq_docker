@@ -1,6 +1,10 @@
 FROM ubuntu
 
-LABEL maintainer="Arjun Prasad <aprasad@ncbi.nlm.nih.gov>"
+LABEL maintainer="Lucas Harrison <Lucas.Harrison@fda.hhs.gov>"
+
+# Maintainer for the original Dockerfile is Arjun Prasad
+# Keeping their label in comments to ensure credit
+# LABEL maintainer="Arjun Prasad <aprasad@ncbi.nlm.nih.gov>"
 
 ARG VERSION
 
