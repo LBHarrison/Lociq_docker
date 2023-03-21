@@ -13,7 +13,7 @@ wget https://github.com/LBHarrison/Lociq_docker/raw/main/Dockerfile
 ```
 Setup may take 20-30 minutes to complete and up to 3.6Gb of disk space.
 
-One way to run the application in [Docker](http://www.docker.com/) is to navigate to the directory that contains your data (GFF files, reference database, reference plasmid type info and additional sequence files for analysis) and run the following:
+One way to run the application in [Docker](http://www.docker.com/) is to navigate to the directory that contains your data (GFF folder, reference database, reference plasmid type info and additional sequence files for analysis) and run the following:
 ```
 docker run -it -v ${PWD}:/data lociq bash
 ```
@@ -31,7 +31,7 @@ As an example, if the user is in the directory that contains their data, the fol
 
 ```
 docker run -it -v ${PWD}:/data lociq bash
-./T.step1 -G /data/ -P /home/lociq/piggy/bin/piggy
+./T.step1 -G /data/GFF/ -P /home/lociq/piggy/bin/piggy
 ```
 
 Then, to save the pangenome presence-absence matrix that was generated in this step, the user would need to copy the file to the /data/ directory:
