@@ -1,5 +1,0 @@
-sudo apt-key adv --fetch-keys https://cdn.oxfordnanoportal.com/apt/ont-repo.pub 
-
-sudo apt update
-
-sudo apt install ont-gridion-release
